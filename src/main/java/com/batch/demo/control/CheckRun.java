@@ -15,10 +15,8 @@ public class CheckRun {
     @Autowired
     private AsynTaskService asyncTaskService;
     
-    @Value("${task.fixedRate}")
-    long taskfix;
     
-    @Scheduled(cron = "${cron}")
+//    @Scheduled(cron = "${cron}")
 	public void run() throws Exception {
 		
 		for (int i = 0; i < 10; i++) {
